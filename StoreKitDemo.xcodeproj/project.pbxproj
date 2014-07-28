@@ -21,6 +21,7 @@
 		26717D501985BB6900619E49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26717D321985BB6900619E49 /* UIKit.framework */; };
 		26717D581985BB6900619E49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26717D561985BB6900619E49 /* InfoPlist.strings */; };
 		26717D5A1985BB6900619E49 /* StoreKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26717D591985BB6900619E49 /* StoreKitDemoTests.m */; };
+		26717D641985C19300619E49 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26717D631985C19300619E49 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		26717D551985BB6900619E49 /* StoreKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoreKitDemoTests-Info.plist"; sourceTree = "<group>"; };
 		26717D571985BB6900619E49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26717D591985BB6900619E49 /* StoreKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreKitDemoTests.m; sourceTree = "<group>"; };
+		26717D631985C19300619E49 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26717D641985C19300619E49 /* StoreKit.framework in Frameworks */,
 				26717D4E1985BB6900619E49 /* XCTest.framework in Frameworks */,
 				26717D501985BB6900619E49 /* UIKit.framework in Frameworks */,
 				26717D4F1985BB6900619E49 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		26717D2D1985BB6900619E49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26717D631985C19300619E49 /* StoreKit.framework */,
 				26717D2E1985BB6900619E49 /* Foundation.framework */,
 				26717D301985BB6900619E49 /* CoreGraphics.framework */,
 				26717D321985BB6900619E49 /* UIKit.framework */,
@@ -317,7 +321,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lailei Huang (942HFDFLQZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lailei Huang (942HFDFLQZ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -333,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -355,7 +360,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lailei Huang (942HFDFLQZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lailei Huang (942HFDFLQZ)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -365,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -456,6 +462,7 @@
 				26717D5F1985BB6900619E49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26717D601985BB6900619E49 /* Build configuration list for PBXNativeTarget "StoreKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				26717D621985BB6900619E49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

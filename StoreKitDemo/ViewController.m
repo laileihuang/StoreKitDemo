@@ -26,4 +26,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showStoreView:(id)sender {
+    SKStoreProductViewController *storeViewController =
+        [[SKStoreProductViewController alloc] init];
+    
+    storeViewController.delegate = self;
+    
+    NSDictionary *parameters = @{SKStoreProductParameterITunesItemIdentifier:
+                                     [NSNumber numberWithInteger:357410832]};
+    NSLog(@"Clicked buy now");
+    
+    [storeViewController loadProductWithParameters:parameters completionBlock:^(BOOL result, NSError *error) {
+        NSLog(@"try load product");
+        if (result) {
+            [self presentViewController:storeViewController
+                               animated:YES completion:nil];
+        }else{
+            NSLog(@"Result is NO");
+        }
+    }];
+    
+}
+
+#pragma mark -
+#pragma mark SKStoreProductViewControllerDelegate
+
+-(void) productViewControllerDidFinish:(SKStoreProductViewController *)viewController{
+    [viewController dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

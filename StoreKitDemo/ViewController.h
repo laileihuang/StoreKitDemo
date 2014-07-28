@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <StoreKit/StoreKit.h>
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController <SKStoreProductViewControllerDelegate>
+
+- (IBAction)showStoreView:(id)sender;
 
 @end
